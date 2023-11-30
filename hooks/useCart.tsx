@@ -166,7 +166,7 @@ export const CartContextProvider = (props: Props) => {
     setCartProducts(null);
     SetCartTotalQty(0);
     localStorage.setItem("shopCartItems", JSON.stringify(null));
-    toast.success("Cleared!");
+    // toast.success("Cleared!");
   }, [cartProducts]);
 
   const handleSetPaymentIntent = useCallback(
